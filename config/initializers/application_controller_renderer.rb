@@ -6,5 +6,4 @@
 #     https: false
 #   )
 # end
-
-Refile.secret_key = '21e0d6ae80c8f38d852b72d590372340172f6f4f78a989dfc4743f2c2ede64c7c7ad8b891507a9d77d016b92863e0aa4e1edc9dac98889e4962eff3dbbbd3db2'
+Refile.secret_key = '48c2632d4caa7aee8073b2cb71911fccd75757cad2fdf78bc560896b97ec254e5039811c1ab5c5c9113c082d6bf80230d9a759c3f7e774fb0f6bd28283f6bdb3'
