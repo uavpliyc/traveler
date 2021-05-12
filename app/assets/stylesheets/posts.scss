@@ -55,3 +55,12 @@ h1, h2 {
 #text {
   font-size: 18px;
 }
+
+.cover-edit {
+  height: 820px;
+  width: 100%;
+  background-image: url(/assets/sample5.jpg);
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
+  background-size: 100% 100%;
+}
