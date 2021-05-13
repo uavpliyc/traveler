@@ -2,7 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
-h1, h2 {
+h1,
+h2 {
   font-family: serif;
 }
 
@@ -38,7 +39,7 @@ h1, h2 {
 }
 
 .one-post img:hover {
-  transform: scale(1.2,1.2);
+  transform: scale(1.2, 1.2);
 }
 
 .caption {
@@ -67,4 +68,22 @@ h1, h2 {
   background-color: rgba(255, 255, 255, 0.4);
   background-blend-mode: lighten;
   background-size: 100% 100%;
+}
+
+.page a,
+.next a,
+.last a,
+.first a,
+.prev a {
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.page a:hover,
+.next a:hover,
+.last a:hover,
+.first a:hover,
+.prev a:hover {
+  color: black;
 }
