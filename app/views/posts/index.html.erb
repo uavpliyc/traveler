@@ -10,7 +10,7 @@
         <p class="caption">ユーザ名</p>
         <%= attachment_image_tag post, :image, format: 'jpeg', size: '300x200' %>
         <p class="caption mb-0"><%= post.location %></p>
-        <p><%= "#{post.comments.count} コメント" %></p>
+        <p class="caption"><%= "#{post.comments.count} コメント" %></p>
         <% end %>
       </div>
       <% end %>
