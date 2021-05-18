@@ -3,6 +3,14 @@
     <div class="row justify-content-center">
       <h1 class="font-weight-normal mt-5 mb-5">旅行投稿詳細</h1>
     </div>
+    <% if @comment.errors.any? %>
+    <div class="card text-center card text-white bg-danger mb-3">
+      <%= @comment.errors.count %>件のエラーが発生しました
+      <% @comment.errors.full_messages.each do |message| %>
+      <%= message %>
+      <% end %>
+    </div>
+    <% end %>
     <div class="d-flex">
       <div class="row justify-content-center d-block">
         <p class="caption">ユーザ名</p>
@@ -32,8 +40,8 @@
         <% end %>
 
         <p>コメント件数：<%= @post.comments.count %></p>
-        <div class="comments-index">
-          <% @post.comments.each do |comment| %>
+        <% @post.comments.each do |comment| %>
+        <div class="comments-index mb-2">
           <%= comment.user.name %>
           <%= comment.created_at.strftime('%Y/%m/%d') %><br>
           <div class="d-flex">
