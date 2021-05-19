@@ -6,11 +6,12 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.page(params[:page]).reverse_order
+    @posts = @posts.where('location LIKE ?', "%#{params[:search]}%") if params[:search].present?
   end
 
   def show
-    @post = Post.find(params[:id])
-    @comment = Comment.new
+    @post     = Post.find(params[:id])
+    @comment  = Comment.new
     @comments = @post.comments.page(params[:page]).per(7).reverse_order
   end
 
