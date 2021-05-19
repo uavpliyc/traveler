@@ -1,24 +1,28 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# 概要
+旅行の感想を１枚の写真と共に投稿する、シンプルなアプリです。
 
-Things you may want to cover:
+# サイトテーマ
+「旅行の思い出を共有する」
 
-* Ruby version
+# 機能一覧
+- 投稿機能
+- 閲覧機能
+- 編集機能
+- 削除機能
+- 画像投稿機能
+- ユーザー認証機能
+- ページネーション機能
+- コメント機能
+- いいね機能
+- フォロー・フォロワー機能
+- 非同期機能
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 使用gem
+- rails 5.2.4
+- refile
+- refile-mini_magick
+- devise
+- kaminari
+- bootstrap
+- jquery-rails
