@@ -1,3 +1,4 @@
+![header](https://user-images.githubusercontent.com/68683051/118742623-bb767680-b88b-11eb-9c78-ba9971ee51ad.png)
 
 # 概要
 旅行の感想を１枚の写真と共に投稿する、シンプルなアプリです。
